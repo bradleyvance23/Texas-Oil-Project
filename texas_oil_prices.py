@@ -60,3 +60,6 @@ def csv_writer(data, filename="monthly_oil_prices.csv"):
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(data)
+
+yearly_data = monthly_data_per_year(soup)
+csv_writer(yearly_data)
