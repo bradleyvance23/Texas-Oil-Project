@@ -13,31 +13,43 @@ def get_soup(url):
 
     return soup
 
-def year(soup):
-
-    b4_tag = soup.find_all("td", class_="B4")
-    years = []
-    for i in b4_tag:
-        text = i.get_text(strip=True)
-        year_str = text[-4:]
-        if year_str.isdigit():
-            years.append(text)
-
-    return years
-
 soup = get_soup(url)
-# print(year(soup))
 
-def monthly_oil_prices(soup):
+def monthly_data_per_year(soup):
+    data = []
+    rows = soup.find_all("tr")
 
-    b3_tag = soup.find_all("td", class_="B3")
-    oil_prices = []
-    for i in b3_tag:
-        text = i.get_text(strip=True)
-        oil_str = text[-3:]
-        if oil_str.isdigit():
-            oil_prices.append(text)
+    for i in rows:
+        year_tag = i.find("td", class_="B4")
+        if not year_tag:
+            continue
 
-    return oil_prices
+        year_text = year_tag.get_text(strip = True)[-4:]
+        if not year_text.isdigit():
+            continue
 
-print(monthly_oil_prices(soup))
+        month_tag = i.find_all("td", class_="B3")
+        month_text = [w.get_text(strip = True) for w in month_tag]
+
+        while len(month_text) < 12:
+            month_text.append("")
+        
+        data.append({
+            "Year" : year_text,
+            "January" : month_text[0],
+            "February" : month_text[1],
+            "March" : month_text[2],
+            "April" : month_text[3],
+            "May" : month_text[4],
+            "June" : month_text[5],
+            "July" : month_text[6],
+            "August" : month_text[7],
+            "September" : month_text[8],
+            "October" : month_text[9],
+            "November" : month_text[10],
+            "December" : month_text[11],
+        })
+    
+    return data
+
+print(monthly_data_per_year(soup))
