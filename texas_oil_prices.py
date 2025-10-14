@@ -52,4 +52,11 @@ def monthly_data_per_year(soup):
     
     return data
 
-print(monthly_data_per_year(soup))
+def csv_writer(data, filename="monthly_oil_prices.csv"):
+    
+    fieldnames=["Year", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+    with open(filename, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(data)
