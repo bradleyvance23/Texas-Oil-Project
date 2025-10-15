@@ -38,23 +38,24 @@ Oil activity varies widely across Texas. Using only state-level averages can pot
 
 ### Next Steps (extensions)
 1. Regional or County-Level Analysis:
-- Use county-level data to analyze any regional variation.
-- Examine if regions that are richer in Oil like Midland experience different price elasticities compared to less active regions. 
-- Look into more regional economic factors such as regional population.
+    - Use county-level data to analyze any regional variation.
+    - Examine if regions that are richer in Oil like Midland experience different price elasticities compared to less active regions. 
+    - Look into more regional economic factors such as regional population.
 2. Comparative Analysis:
-- Compare Texas to another major oil-producing state (e.g. New Mexico or North Dakota).
+    - Compare Texas to another major oil-producing state (e.g. New Mexico or North Dakota).
 3. Corporate Analysis:
-- Explore data from major oil producers operating in Texas (e.g. ExxonMobil, Chevron, ConocoPhillips).
-- Examine firm-level production trends and whether they correlate with market prices.
+    - Explore data from major oil producers operating in Texas (e.g. ExxonMobil, Chevron, ConocoPhillips).
+    - Examine firm-level production trends and whether they correlate with market prices.
 
 ## Reproduction
 1. Clone the repository 
-'''bash git clone git@github.com:bradleyvance23/Texas-Oil-Project.git'''
+`git clone git@github.com:bradleyvance23/Texas-Oil-Project.git`
 2. Install additional packages 
- 'pip install -r requirements'
+`pip install -r requirements`
 3. Run data scraping and cleaning
-'python code/scrape_data.py'
-'python code/clean.py'
+`python code/main_scrape_file.py`
+`python code/clean.py`
 4. Execute analysis 
-'python __'
+`python __`
 5. View outputs  
+`python`
