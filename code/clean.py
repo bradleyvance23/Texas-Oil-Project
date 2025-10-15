@@ -22,6 +22,8 @@ def process_csvs(csv_info):
     for info in csv_info:
         df = pd.read_csv(info['file'])
         
+        df['Year'] = df['Year'].astype(str).str[:4].astype(int)
+        
         if info['type'] == 'monthly':
             df['Average'] = df[info['month_cols']].mean(axis=1)
             yearly_avg = df[['Year', 'Average']]
@@ -29,7 +31,7 @@ def process_csvs(csv_info):
             yearly_avg = df[['Year', info['value_col']]].rename(columns={info['value_col']: 'Average'})
         else:
             raise ValueError("CSV type must be 'monthly' or 'yearly'")
-        
+
         yearly_dfs.append(yearly_avg)
     
     return yearly_dfs
