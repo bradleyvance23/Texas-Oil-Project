@@ -29,3 +29,10 @@ def parse_fred_data(json_data):
 			"GDP (Millions of Dollars)":value 
 		})
 	return rows 
+
+def write_gdp_csv(data, filename="TX_OIL_GDP.csv"):
+	fieldnames = ("Year", "GDP (Millions of Dollars)")
+	with open(filename, "w", newline="") as f:
+		writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(data)
