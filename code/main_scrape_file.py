@@ -8,7 +8,7 @@ def run_all_scraping():
 
     scrape_barrel_production.main()
     scrape_texas_gdp.main()
-    scrape_well_count.main()
+    scrape_well_count_new.main()
     texas_oil_prices.main()
 
     print("\n Scraping complete")
