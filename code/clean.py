@@ -1,4 +1,13 @@
+import os
 import pandas as pd
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+csv_files = [
+    os.path.join(script_dir, '../artifacts/monthly_oil_prices.csv'),
+    os.path.join(script_dir, '../artifacts/texas_well_counts.csv'),
+    os.path.join(script_dir, '../artifacts/monthly_oil_production.csv'),
+    os.path.join(script_dir, '../artifacts/TX_OIL_GDP.csv'),
+]
 
 def dataframes_and_averages(csv_paths, year_col='Year', value_col='Value', monthly_sep='-'):
 
@@ -18,3 +27,8 @@ def dataframes_and_averages(csv_paths, year_col='Year', value_col='Value', month
         yearly_dfs.append(yearly_avg)
     
     return yearly_dfs
+
+yearly_dataframes = dataframes_and_averages(csv_files, year_col='Date', value_col='Production')
+
+for df in yearly_dataframes:
+    print(df.head())
