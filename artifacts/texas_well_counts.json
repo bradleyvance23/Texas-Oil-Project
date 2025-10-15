@@ -1,0 +1,338 @@
+[
+  {
+    "Year": 2018,
+    "Well_Count": 187401
+  },
+  {
+    "Year": 2017,
+    "Well_Count": 187139
+  },
+  {
+    "Year": 2016,
+    "Well_Count": 178927
+  },
+  {
+    "Year": 2015,
+    "Well_Count": 193807
+  },
+  {
+    "Year": 2014,
+    "Well_Count": 190331
+  },
+  {
+    "Year": 2013,
+    "Well_Count": 179797
+  },
+  {
+    "Year": 2012,
+    "Well_Count": 167864
+  },
+  {
+    "Year": 2011,
+    "Well_Count": 161402
+  },
+  {
+    "Year": 2010,
+    "Well_Count": 158451
+  },
+  {
+    "Year": 2009,
+    "Well_Count": 157807
+  },
+  {
+    "Year": 2008,
+    "Well_Count": 156588
+  },
+  {
+    "Year": 2007,
+    "Well_Count": 153223
+  },
+  {
+    "Year": 2006,
+    "Well_Count": 151832
+  },
+  {
+    "Year": 2005,
+    "Well_Count": 151286
+  },
+  {
+    "Year": 2004,
+    "Well_Count": 151205
+  },
+  {
+    "Year": 2003,
+    "Well_Count": 153461
+  },
+  {
+    "Year": 2002,
+    "Well_Count": 155865
+  },
+  {
+    "Year": 2001,
+    "Well_Count": 159357
+  },
+  {
+    "Year": 2000,
+    "Well_Count": 161097
+  },
+  {
+    "Year": 1999,
+    "Well_Count": 162620
+  },
+  {
+    "Year": 1998,
+    "Well_Count": 170288
+  },
+  {
+    "Year": 1997,
+    "Well_Count": 175475
+  },
+  {
+    "Year": 1996,
+    "Well_Count": 175277
+  },
+  {
+    "Year": 1995,
+    "Well_Count": 177397
+  },
+  {
+    "Year": 1994,
+    "Well_Count": 179955
+  },
+  {
+    "Year": 1993,
+    "Well_Count": 186342
+  },
+  {
+    "Year": 1992,
+    "Well_Count": 193310
+  },
+  {
+    "Year": 1991,
+    "Well_Count": 196292
+  },
+  {
+    "Year": 1990,
+    "Well_Count": 194962
+  },
+  {
+    "Year": 1989,
+    "Well_Count": 190821
+  },
+  {
+    "Year": 1988,
+    "Well_Count": 196580
+  },
+  {
+    "Year": 1987,
+    "Well_Count": 199354
+  },
+  {
+    "Year": 1986,
+    "Well_Count": 200055
+  },
+  {
+    "Year": 1985,
+    "Well_Count": 210477
+  },
+  {
+    "Year": 1984,
+    "Well_Count": 207451
+  },
+  {
+    "Year": 1983,
+    "Well_Count": 197983
+  },
+  {
+    "Year": 1982,
+    "Well_Count": 191319
+  },
+  {
+    "Year": 1981,
+    "Well_Count": 183991
+  },
+  {
+    "Year": 1980,
+    "Well_Count": 175673
+  },
+  {
+    "Year": 1979,
+    "Well_Count": 169826
+  },
+  {
+    "Year": 1978,
+    "Well_Count": 166365
+  },
+  {
+    "Year": 1977,
+    "Well_Count": 163746
+  },
+  {
+    "Year": 1976,
+    "Well_Count": 160546
+  },
+  {
+    "Year": 1975,
+    "Well_Count": 160603
+  },
+  {
+    "Year": 1974,
+    "Well_Count": 159702
+  },
+  {
+    "Year": 1973,
+    "Well_Count": 159090
+  },
+  {
+    "Year": 1972,
+    "Well_Count": 167233
+  },
+  {
+    "Year": 1971,
+    "Well_Count": 172696
+  },
+  {
+    "Year": 1970,
+    "Well_Count": 177221
+  },
+  {
+    "Year": 1969,
+    "Well_Count": 183141
+  },
+  {
+    "Year": 1968,
+    "Well_Count": 187681
+  },
+  {
+    "Year": 1967,
+    "Well_Count": 192100
+  },
+  {
+    "Year": 1966,
+    "Well_Count": 196308
+  },
+  {
+    "Year": 1965,
+    "Well_Count": 197924
+  },
+  {
+    "Year": 1964,
+    "Well_Count": 199119
+  },
+  {
+    "Year": 1963,
+    "Well_Count": 198236
+  },
+  {
+    "Year": 1962,
+    "Well_Count": 197659
+  },
+  {
+    "Year": 1961,
+    "Well_Count": 196396
+  },
+  {
+    "Year": 1960,
+    "Well_Count": 192627
+  },
+  {
+    "Year": 1959,
+    "Well_Count": 188934
+  },
+  {
+    "Year": 1958,
+    "Well_Count": 182633
+  },
+  {
+    "Year": 1957,
+    "Well_Count": 176705
+  },
+  {
+    "Year": 1956,
+    "Well_Count": 168930
+  },
+  {
+    "Year": 1955,
+    "Well_Count": 158598
+  },
+  {
+    "Year": 1954,
+    "Well_Count": 149142
+  },
+  {
+    "Year": 1953,
+    "Well_Count": 142159
+  },
+  {
+    "Year": 1952,
+    "Well_Count": 136398
+  },
+  {
+    "Year": 1951,
+    "Well_Count": 130309
+  },
+  {
+    "Year": 1950,
+    "Well_Count": 123271
+  },
+  {
+    "Year": 1949,
+    "Well_Count": 115483
+  },
+  {
+    "Year": 1948,
+    "Well_Count": 109643
+  },
+  {
+    "Year": 1947,
+    "Well_Count": 105537
+  },
+  {
+    "Year": 1946,
+    "Well_Count": 103109
+  },
+  {
+    "Year": 1945,
+    "Well_Count": 101225
+  },
+  {
+    "Year": 1944,
+    "Well_Count": 99746
+  },
+  {
+    "Year": 1943,
+    "Well_Count": 98596
+  },
+  {
+    "Year": 1942,
+    "Well_Count": 98757
+  },
+  {
+    "Year": 1941,
+    "Well_Count": 98802
+  },
+  {
+    "Year": 1940,
+    "Well_Count": 95214
+  },
+  {
+    "Year": 1939,
+    "Well_Count": 89914
+  },
+  {
+    "Year": 1938,
+    "Well_Count": 85137
+  },
+  {
+    "Year": 1937,
+    "Well_Count": 77565
+  },
+  {
+    "Year": 1936,
+    "Well_Count": 68054
+  },
+  {
+    "Year": 1935,
+    "Well_Count": 59461
+  }
+]
