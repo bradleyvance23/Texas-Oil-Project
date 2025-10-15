@@ -1,5 +1,5 @@
 import requests
-from bs4 import BeautifulSoup 
+import os 
 import csv
 from dotenv import load_dotenv
 
@@ -11,11 +11,19 @@ if not FRED_API_KEY:
 SERIES_ID = "TXPETCOALMANNGSP"
 URL = "https://api.stlouisfed.org/fred/series/observations"
 
+params = {
+    "series_id": SERIES_ID,
+    "api_key": FRED_API_KEY,
+    "file_type": "json"
+}
+
 def get_fred_gdp(url, params):
-	response = requests.get(url, params=prarams)
+	response = requests.get(url, params=params)
 	response.raise_for_status()
 	
 	return response.json()
+
+fred_json = get_fred_gdp(URL,params)
 
 def parse_fred_data(json_data):
 	rows = []
@@ -32,7 +40,11 @@ def parse_fred_data(json_data):
 
 def write_gdp_csv(data, filename="TX_OIL_GDP.csv"):
 	fieldnames = ("Year", "GDP (Millions of Dollars)")
+
 	with open(filename, "w", newline="") as f:
 		writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(data)
+		writer.writeheader()
+		writer.writerows(data)
+
+texas_oil_gdp = parse_fred_data(fred_json)
+write_gdp_csv(texas_oil_gdp)
