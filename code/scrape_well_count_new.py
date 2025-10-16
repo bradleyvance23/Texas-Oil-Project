@@ -3,6 +3,7 @@ import csv
 import json
 import pandas as pd
 import requests
+import lxml
 from bs4 import BeautifulSoup
 
 def main():
@@ -46,10 +47,11 @@ def main():
             writer.writeheader()
             writer.writerows(well_counts)
         
+        with open(json_filename, "w") as f:
+            json.dump(well_counts, f, indent=4)
 
-    if __name__ == "__main__":
-        data = request_raw_well_data()
-        save_well_counts(data)
+    data = request_raw_well_data()
+    save_well_counts(data)
 
 if __name__ == "__main__":
     main()
