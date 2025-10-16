@@ -18,7 +18,7 @@ We utilized regression analysis and a time-series technique to identify whether 
 - **Texas GDP** | Annual State GDP | [FRED - NGSP](https://fred.stlouisfed.org/graph/?g=hz8p)
 - **Oil Prices** | Texas Crude Oil First Purchase Price (dollars per barrel) | [US Energy Information Administration](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=F003048__3&f=M)    
 ### Data Collection 
-All data is stored in the '/code' folder. We cleaned and merged the datasets to ensure consistent:
+All data (raw) is stored in the '/artifacts' folder. We cleaned and merged the datasets to ensure consistenty among:
 - Units (thousand of barrels to barrels)
 - Observation Frequency - inconsistent/missing years in data
 - Date Alignment (time frequency) to ensure annual observations
@@ -42,16 +42,26 @@ The regression is estimated by:
 
 ## Regression Results 
 ![Regression Plot](artifacts/texas_oil_price_actual_vs_predicted.png)
-![Regression Results](artifacts/screenshot.png)
-## Analysis/ Discussion
+- 2 global major oil market events are noticeable above:
+    1. The Great Recession (2008-2009) where we can see oil prices (actual) plumment after reaching record-high prices in icnreasing from 2004-2008.
+    2. The oil price crash (2014-2016) when OPEC decided to push productivty in oil and increases output, despite the fact that prices were already falling. This lead to overproduction and a massive supply gult, and prices continued to plumment.   
+     
+![Regression Results](artifacts/regression_results.png)
+## Analysis
+Regression Results 
+- **R-squared** = 0.674 | 67.4% of the variation in oil prices can be explained in our model.
+- **Texas_GDP** is the only variable in the model that has a statistical significance with (p = .000)
+    - However, this may be due to ????
+- **Oil_Well_Count** and **Production_Barrels** are not statistically significant in this model. 
 
+## Discussion
 ### Limitations 
 - Data frequency 
-Our data is mainly annual, but monthly or quarterly could potentially better capture price production dynamics.
+Our data is mainly annual, but monthly or quarterly data for all variables could potentially better capture price production dynamics.
 -  Omitted Variables
 Oil prices are impacted by many other factors from outside of Texas, including global factors such as OPEC decisions.
 - Regional Variation 
-Oil activity varies widely across Texas. Using only state-level averages can potentially hide any important regional differences. 
+Oil activity varies widely across Texas. Using only state-level averages can potentially hide any important regional differences that could be better seen with county-level data. 
 
 ### Next Steps (extensions)
 1. Regional or County-Level Analysis:
@@ -65,14 +75,9 @@ Oil activity varies widely across Texas. Using only state-level averages can pot
     - Examine firm-level production trends and whether they correlate with market prices.
 
 ## Reproduction
-1. Clone the repository 
-`git clone git@github.com:bradleyvance23/Texas-Oil-Project.git`
-2. Install additional packages 
-`pip install -r requirements`
-3. Run data scraping and cleaning
-`python code/main_scrape_file.py`
-`python code/clean.py`
-4. Execute analysis 
-`python __`
-5. View outputs  
-`python`
+1. Clone the repository `git clone git@github.com:bradleyvance23/Texas-Oil-Project.git`
+2. Install additional packages `pip install -r requirements`
+3. Run data visualization file  `python code/data_visualization.py`
+    - This file will run the scraping file, data cleaning file, and the data analysis file
+4. View the outputs in the `artifacts` folder
+
