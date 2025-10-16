@@ -24,7 +24,21 @@ All data is stored in the '/code' folder. We cleaned and merged the datasets to 
 - Date Alignment (time frequency) to ensure annual observations
 
 ## Methodology
-We estimate the relationships through a regression model(s):
+We estimate the relationships through the regression model: y = x0 + (beta1)x1 + (beta2)x2 + (beta3)x3:
+
+- where y is the average price of oil per barrel per year
+- x0 is the slope coefficient
+- x1 is the average production of barrels of oils per year
+- x2 is the average number of oils well per year
+- x3 is the GDP for the Texas Oil & Gas Industry in a given year
+
+The regression is estimated by:
+- Scraping all datasources and producing csv files for each datasource
+- Cleaning the csv files by averaging monthly data for each year and converting all data points to integers
+- Converting clean files to dataframes
+- Running the regression model as listed above only against data values that overlap in years
+- Running simple linear regression models of the y term on each of the x terms to isolate the individual relationship of each variable
+- Plot the predicted values of oil prices using the estimated coefficients from the regression comparing it to the actual values of oil prices
 
 ## Regression Results 
 ![Regression Plot](artifacts/texas_oil_price_actual_vs_predicted.png)
