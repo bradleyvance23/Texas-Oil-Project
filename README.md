@@ -10,6 +10,7 @@ We utilized regression analysis and a time-series technique to identify whether 
 * How have Texas oil well counts and production levels evolved over time? 
 * Is there a measurable relationship between oil production and oil prices?
 * How does oil productivty or activity correlate with Texas GDP?  
+* How responsive is Texas oil production to changes in price? 
 
 ## Data Sources
 - **Well Counts** | Annual Texas oil well counts since 1935 | [Texas Railroad Commision](https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/historical-production-data/crude-oil-production-and-well-counts-since-1935/)
@@ -23,7 +24,8 @@ All data is stored in the '/code' folder. We cleaned and merged the datasets to 
 - Date Alignment (time frequency) to ensure annual observations
 
 ## Methodology
-We estimate the relationships through a regression model(s)
+We estimate the relationships through a regression model(s):
+
 ## Regression Results 
 
 ## Analysis/ Discussion
