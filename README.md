@@ -30,16 +30,17 @@ Price_per_Barrel
 ![Regression Plot](artifacts/texas_oil_price_actual_vs_predicted.png)
 - 2 global major oil market events are noticeable above:
     1. The Great Recession (2008-2009) where we can see oil prices (actual) plumment after reaching record-high prices in icnreasing from 2004-2008.
-    2. The oil price crash (2014-2016) when OPEC decided to push productivty in oil and increases output, despite the fact that prices were already falling. This lead to overproduction and a massive supply gult, and prices continued to plumment.    
+    2. The oil price crash (2014-2016) when OPEC decided to push productivty in oil and increases output, despite the fact that prices were already falling. This lead to overproduction and a massive supply gult, and prices continued to plumment.   
+     
 ![Regression Results](artifacts/screenshot.png)
-## Analysis/ Discussion
+## Analysis
 Regression Results 
 - **R-squared** = 0.674 | 67.4% of the variation in oil prices can be explained in our model.
 - **Texas_GDP** is the only variable in the model that has a statistical significance with (p = .000)
     - However, this may be due to ????
 - **Oil_Well_Count** and **Production_Barrels** are not statistically significant in this model. 
 
-
+## Discussion
 ### Limitations 
 - Data frequency 
 Our data is mainly annual, but monthly or quarterly data for all variables could potentially better capture price production dynamics.
