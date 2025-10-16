@@ -1,12 +1,17 @@
 import os
 import pandas as pd
+from main_scrape_file import run_all_scraping
+
+run_all_scraping()
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
+ARTIFACTS_DIR = os.path.join(script_dir, '../artifacts')
+
 csv_files = [
-    os.path.join(script_dir, '../artifacts/monthly_oil_prices.csv'),
-    os.path.join(script_dir, '../artifacts/monthly_oil_production.csv'),
-    os.path.join(script_dir, '../artifacts/texas_well_counts.csv'),
-    os.path.join(script_dir, '../artifacts/TX_OIL_GDP.csv'),
+    os.path.join(ARTIFACTS_DIR, 'monthly_oil_prices.csv'),
+    os.path.join(ARTIFACTS_DIR, 'monthly_oil_production.csv'),
+    os.path.join(ARTIFACTS_DIR, 'texas_well_counts.csv'),
+    os.path.join(ARTIFACTS_DIR, 'TX_OIL_GDP.csv'),
 ]
 
 csv_info = [

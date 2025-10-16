@@ -11,7 +11,7 @@ def run_all_scraping():
     scrape_well_count_new.main()
     texas_oil_prices.main()
 
-    print("\n Scraping complete")
+    print("\nScraping complete")
 
 if __name__ == "__main__":
     run_all_scraping()

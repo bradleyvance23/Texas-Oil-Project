@@ -1,10 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import os
 
 url = "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=MCRFPTX2&f=M"
 
 def main():
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    artifacts_dir = os.path.join(script_dir, '../artifacts')
+    os.makedirs(artifacts_dir, exist_ok=True)
 
     def get_soup(url):
         response = requests.get(url)
@@ -51,9 +56,10 @@ def main():
         return data 
 
     def save_to_csv(data, filename="monthly_oil_production.csv"):
+        filepath = os.path.join(artifacts_dir, filename)
         df = pd.DataFrame(data)
-        df.to_csv(filename, index=False)
-        print(f"Data saved to {filename}")
+        df.to_csv(filepath, index=False)
+        print(f"Data saved to {filepath}")
 
     soup = get_soup(url)
     if soup:

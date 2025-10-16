@@ -7,6 +7,9 @@ def main():
 
     url = "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=F003048__3&f=M"
 
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    artifacts_dir = os.path.join(script_dir, '../artifacts')
+
     def get_soup(url):
 
         response = requests.get(url)
@@ -56,9 +59,10 @@ def main():
 
     def csv_writer(data, filename="monthly_oil_prices.csv"):
         
+        filepath = os.path.join(artifacts_dir, filename)
         fieldnames=["Year", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-        with open(filename, "w", newline="") as f:
+        with open(filepath, "w", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(data)
