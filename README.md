@@ -51,7 +51,6 @@ The regression is estimated by:
 Regression Results 
 - **R-squared** = 0.674 | 67.4% of the variation in oil prices can be explained in our model.
 - **Texas_GDP** is the only variable in the model that has a statistical significance with (p = .000)
-    - However, this may be due to ????
 - **Oil_Well_Count** and **Production_Barrels** are not statistically significant in this model.
 - The results for this test were affected by the small sample size that we used due to using annual data. Seperate tests using the monthly data for oil production found that production was a significant variable. 
 
