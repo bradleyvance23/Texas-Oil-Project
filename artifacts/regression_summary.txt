@@ -3,8 +3,8 @@
 Dep. Variable:       Price_per_Barrel   R-squared:                       0.674
 Model:                            OLS   Adj. R-squared:                  0.620
 Method:                 Least Squares   F-statistic:                     12.43
-Date:                Wed, 15 Oct 2025   Prob (F-statistic):           0.000122
-Time:                        21:56:27   Log-Likelihood:                -91.655
+Date:                Thu, 16 Oct 2025   Prob (F-statistic):           0.000122
+Time:                        11:26:43   Log-Likelihood:                -91.655
 No. Observations:                  22   AIC:                             191.3
 Df Residuals:                      18   BIC:                             195.7
 Df Model:                           3                                         
