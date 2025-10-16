@@ -28,7 +28,7 @@ We estimate the relationships through a regression model(s):
 
 ## Regression Results 
 ![Regression Plot](artifacts/texas_oil_price_actual_vs_predicted.png)
-
+![Regression Results](artifacts/screenshot.png)
 ## Analysis/ Discussion
 
 ### Limitations 
