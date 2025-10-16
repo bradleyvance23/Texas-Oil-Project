@@ -23,6 +23,7 @@ X = sm.add_constant(X)
 
 model = sm.OLS(y, X).fit()
 print(model.summary())
+df['Predicted_Price'] = model.predict(X)
 
 print('\n' + '='*60 + '\n')
 
