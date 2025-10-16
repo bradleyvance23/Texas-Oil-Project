@@ -27,6 +27,9 @@ df['Predicted_Price'] = model.predict(X)
 
 print('\n' + '='*60 + '\n')
 
+with open("artifacts/regression_summary.txt", "w") as f:
+    f.write(model.summary().as_text())
+
 for var in ['Production_Barrels', 'Oil_Well_Count', 'Texas_GDP']:
     Z = df[[var]]
     Z = sm.add_constant(Z)

@@ -27,7 +27,8 @@ All data is stored in the '/code' folder. We cleaned and merged the datasets to 
 We estimate the relationships through a regression model(s):
 
 ## Regression Results 
-![Regression Plot](artifacts/texas_oil_price_time_series.png)
+![Regression Plot](artifacts/texas_oil_price_actual_vs_predicted.png)
+![Regression Results](artifacts/screenshot.png)
 ## Analysis/ Discussion
 
 ### Limitations 

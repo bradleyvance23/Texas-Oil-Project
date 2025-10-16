@@ -1,0 +1,29 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       Price_per_Barrel   R-squared:                       0.674
+Model:                            OLS   Adj. R-squared:                  0.620
+Method:                 Least Squares   F-statistic:                     12.43
+Date:                Wed, 15 Oct 2025   Prob (F-statistic):           0.000122
+Time:                        21:56:27   Log-Likelihood:                -91.655
+No. Observations:                  22   AIC:                             191.3
+Df Residuals:                      18   BIC:                             195.7
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+const                -22.3091    101.375     -0.220      0.828    -235.290     190.672
+Production_Barrels    -0.0044      0.010     -0.462      0.650      -0.024       0.016
+Oil_Well_Count         0.0002      0.001      0.306      0.763      -0.001       0.002
+Texas_GDP              0.0017      0.000      5.783      0.000       0.001       0.002
+==============================================================================
+Omnibus:                       12.376   Durbin-Watson:                   2.285
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):               10.511
+Skew:                           1.422   Prob(JB):                      0.00522
+Kurtosis:                       4.838   Cond. No.                     4.67e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.67e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
