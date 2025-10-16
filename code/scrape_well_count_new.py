@@ -1,12 +1,14 @@
 import os
 import csv
-import json
 import pandas as pd
 import requests
-import lxml
 from bs4 import BeautifulSoup
 
 def main():
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    artifacts_dir = os.path.join(script_dir, '../artifacts')
+    os.makedirs(artifacts_dir, exist_ok=True)
 
     def request_raw_well_data():
         """
@@ -20,15 +22,12 @@ def main():
         soup = BeautifulSoup(response.text, "html.parser")
         table = soup.find("table")
 
-       
-        """Read the table into a DataFrame and make columns"""
         df = pd.read_html(str(table))[0]
         df.columns = [col.strip() for col in df.columns]
 
         year_col = [col for col in df.columns if "Year" in col][0]
         wells_col = [col for col in df.columns if "Number of Producing Wells" in col][0]
 
-        """Build list of dicts""" 
         well_counts = []
         for _, row in df.iterrows():
             try:
@@ -39,19 +38,19 @@ def main():
                 continue  
         return well_counts
 
-    def save_well_counts(well_counts, csv_filename="texas_well_counts.csv", json_filename="texas_well_counts.json"):
-        """Save the well counts to CSV file."""
+    def save_well_counts(well_counts, filename="texas_well_counts.csv"):
+        """Save the well counts to CSV file in artifacts folder."""
+        filepath = os.path.join(artifacts_dir, filename)
         fieldnames = ["Year", "Well_Count"]
 
-        with open(csv_filename, "w", newline="") as f:
+        with open(filepath, "w", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(well_counts)
-        
+        print(f"Data saved to {filepath}")
 
-    if __name__ == "__main__":
-        data = request_raw_well_data()
-        save_well_counts(data)
-
+    data = request_raw_well_data()
+    save_well_counts(data)
+    
 if __name__ == "__main__":
     main()
