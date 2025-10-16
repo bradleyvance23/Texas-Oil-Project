@@ -3,7 +3,7 @@ Oil Production Midterm Project
 
 ## Project Overview
 This project investigates how **Texas oil prices** have impacted **Texas oil production** - measured by well counts and barrel production.  
-We scraped data on our individual variables to create a combined dataset to study production trends, economic cycles and potential causal relationships between production activity and the broader economic preformance. 
+We scarped data on our individual variables to create a combined dataset to study production trends, economic cycles and potential casual relationships between production activity and the broader economic preformance. 
 We utilized regression analysis and a time-series technique to identify whether increases in oil output or well counts are associated with changes in oil prices.
 
 ### Research Questions
@@ -32,7 +32,7 @@ Price_per_Barrel
     1. The Great Recession (2008-2009) where we can see oil prices (actual) plumment after reaching record-high prices in icnreasing from 2004-2008.
     2. The oil price crash (2014-2016) when OPEC decided to push productivty in oil and increases output, despite the fact that prices were already falling. This lead to overproduction and a massive supply gult, and prices continued to plumment.   
      
-![Regression Results](artifacts/screenshot.png)
+![Regression Results](artifacts/regression_results.png)
 ## Analysis
 Regression Results 
 - **R-squared** = 0.674 | 67.4% of the variation in oil prices can be explained in our model.
