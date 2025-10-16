@@ -3,7 +3,7 @@ Oil Production Midterm Project
 
 ## Project Overview
 This project investigates how **Texas oil prices** have impacted **Texas oil production** - measured by well counts and barrel production.  
-We scarped data on our individual variables to create a combined dataset to study production trends, economic cycles and potential casual relationships between production activity and the broader economic preformance. 
+We scraped data on our individual variables to create a combined dataset to study production trends, economic cycles and potential causal relationships between production activity and the broader economic preformance. 
 We utilized regression analysis and a time-series technique to identify whether increases in oil output or well counts are associated with changes in oil prices.
 
 ### Research Questions
@@ -28,7 +28,7 @@ We estimate the relationships through the regression model: y = x0 + (beta1)x1 +
 
 - where y is the average price of oil per barrel per year
 - x0 is the slope coefficient
-- x1 is the average production of barrels of oils per year
+- x1 is the average production of barrels of oil per year
 - x2 is the average number of oils well per year
 - x3 is the GDP for the Texas Oil & Gas Industry in a given year
 
@@ -43,7 +43,7 @@ The regression is estimated by:
 ## Regression Results 
 ![Regression Plot](artifacts/texas_oil_price_actual_vs_predicted.png)
 - 2 global major oil market events are noticeable above:
-    1. The Great Recession (2008-2009) where we can see oil prices (actual) plumment after reaching record-high prices in icnreasing from 2004-2008.
+    1. The Great Recession (2008-2009) where we can see oil prices (actual) plumment after reaching record-high prices in increasing from 2004-2008.
     2. The oil price crash (2014-2016) when OPEC decided to push productivty in oil and increases output, despite the fact that prices were already falling. This lead to overproduction and a massive supply gult, and prices continued to plumment.   
      
 ![Regression Results](artifacts/regression_results.png)
@@ -52,15 +52,16 @@ Regression Results
 - **R-squared** = 0.674 | 67.4% of the variation in oil prices can be explained in our model.
 - **Texas_GDP** is the only variable in the model that has a statistical significance with (p = .000)
     - However, this may be due to ????
-- **Oil_Well_Count** and **Production_Barrels** are not statistically significant in this model. 
+- **Oil_Well_Count** and **Production_Barrels** are not statistically significant in this model.
+- The results for this test were affected by the small sample size that we used due to using annual data. Seperate tests using the monthly data for oil production found that production was a significant variable. 
 
 ## Discussion
 ### Limitations 
-- Data frequency 
+- Data frequency -
 Our data is mainly annual, but monthly or quarterly data for all variables could potentially better capture price production dynamics.
--  Omitted Variables
+-  Omitted Variables -
 Oil prices are impacted by many other factors from outside of Texas, including global factors such as OPEC decisions.
-- Regional Variation 
+- Regional Variation -
 Oil activity varies widely across Texas. Using only state-level averages can potentially hide any important regional differences that could be better seen with county-level data. 
 
 ### Next Steps (extensions)
