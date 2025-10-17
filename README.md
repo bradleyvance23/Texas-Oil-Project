@@ -23,7 +23,7 @@ All data (raw) is stored in the '/artifacts' folder. We cleaned and merged the d
 - Observation Frequency - inconsistent/missing years in data
 - Date Alignment (time frequency) to ensure annual observations
 ### Data Visualization
-![Price vs Production line graph](artifacts/dual_axis_price_vs_production.png)
+![Price vs Production line graph](artifacts/price_vs_production.png)
 
 ![Line Graph](artifacts/line_graph_oil_trends.png)
 ## Methodology
