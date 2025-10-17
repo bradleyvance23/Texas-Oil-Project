@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             Well_Count   R-squared:                       0.051
+Model:                            OLS   Adj. R-squared:                  0.027
+Method:                 Least Squares   F-statistic:                     2.108
+Date:                Thu, 16 Oct 2025   Prob (F-statistic):              0.155
+Time:                        16:31:37   Log-Likelihood:                -456.83
+No. Observations:                  41   AIC:                             917.7
+Df Residuals:                      39   BIC:                             921.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+const             1.825e+05   4631.754     39.409      0.000    1.73e+05    1.92e+05
+Price_per_Barrel  -153.1736    105.501     -1.452      0.155    -366.569      60.222
+==============================================================================
+Omnibus:                       10.293   Durbin-Watson:                   0.156
+Prob(Omnibus):                  0.006   Jarque-Bera (JB):                2.657
+Skew:                           0.045   Prob(JB):                        0.265
+Kurtosis:                       1.756   Cond. No.                         76.1
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

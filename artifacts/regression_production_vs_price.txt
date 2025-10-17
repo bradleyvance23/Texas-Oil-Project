@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     Production_Barrels   R-squared:                       0.123
+Model:                            OLS   Adj. R-squared:                  0.122
+Method:                 Least Squares   F-statistic:                     75.02
+Date:                Thu, 16 Oct 2025   Prob (F-statistic):           5.58e-17
+Time:                        16:31:37   Log-Likelihood:                -4601.7
+No. Observations:                 535   AIC:                             9207.
+Df Residuals:                     533   BIC:                             9216.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+const             1620.2735    105.970     15.290      0.000    1412.103    1828.444
+Price_per_Barrel    17.6526      2.038      8.661      0.000      13.649      21.656
+==============================================================================
+Omnibus:                       28.207   Durbin-Watson:                   0.183
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               31.201
+Skew:                           0.577   Prob(JB):                     1.68e-07
+Kurtosis:                       2.743   Cond. No.                         96.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
