@@ -22,7 +22,10 @@ All data (raw) is stored in the '/artifacts' folder. We cleaned and merged the d
 - Units (thousand of barrels to barrels)
 - Observation Frequency - inconsistent/missing years in data
 - Date Alignment (time frequency) to ensure annual observations
+### Data Visualization
+![Price vs Production line graph](artifacts/dual_axis_price_vs_production.png)
 
+![Line Graph](artifacts/line_graph_oil_trends.png)
 ## Methodology
 We estimate the relationships through the regression model: y = x0 + (beta1)x1 + (beta2)x2 + (beta3)x3:
 
@@ -44,8 +47,8 @@ The regression is estimated by:
 ![Regression Plot](artifacts/texas_oil_price_actual_vs_predicted.png)
 - 2 global major oil market events are noticeable above:
     1. The Great Recession (2008-2009) where we can see oil prices (actual) plumment after reaching record-high prices in increasing from 2004-2008.
-    2. The oil price crash (2014-2016) when OPEC decided to push productivty in oil and increases output, despite the fact that prices were already falling. This lead to overproduction and a massive supply gult, and prices continued to plumment.   
-     
+    2. The oil price crash (2014-2016) when OPEC decided to push productivty in oil and increases output, despite the fact that prices were already falling. This lead to overproduction and a massive supply gult, and prices continued to plumment. 
+
 ![Regression Results](artifacts/regression_results.png)
 ## Analysis
 Regression Results 
