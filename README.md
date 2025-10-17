@@ -2,7 +2,7 @@
 Oil Production Midterm Project
 
 ## Project Overview
-This project investigates how **Texas oil prices** have impacted **Texas oil production** - measured by well counts and barrel production.  
+This project investigates if **Texas oil production** impacts the **oil price** in Texas - with Texas oil production measured by well counts and barrel production. We conducted this project to test whether oil production in Texas had any market power through any ability to influence the wider price for oil.
 We scraped data on our individual variables to create a combined dataset to study production trends, economic cycles and potential causal relationships between production activity and the broader economic preformance. 
 We utilized regression analysis and a time-series technique to identify whether increases in oil output or well counts are associated with changes in oil prices.
 
@@ -10,7 +10,7 @@ We utilized regression analysis and a time-series technique to identify whether 
 * How have Texas oil well counts and production levels evolved over time? 
 * Is there a measurable relationship between oil production and oil prices?
 * How does oil productivty or activity correlate with Texas GDP?  
-* How responsive is Texas oil production to changes in price? 
+* How responsive are oil prices to changes in Texas oil production? 
 
 ## Data Sources
 - **Well Counts** | Annual Texas oil well counts since 1935 | [Texas Railroad Commision](https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/historical-production-data/crude-oil-production-and-well-counts-since-1935/)
@@ -52,7 +52,8 @@ Regression Results
 - **R-squared** = 0.674 | 67.4% of the variation in oil prices can be explained in our model.
 - **Texas_GDP** is the only variable in the model that has a statistical significance with (p = .000)
 - **Oil_Well_Count** and **Production_Barrels** are not statistically significant in this model.
-- The results for this test were affected by the small sample size that we used due to using annual data. Seperate tests using the monthly data for oil production found that production was a significant variable. 
+- The regression did not show any statistically significant effect of Texas oil production on the global price of oil. This project does not provide any evidence of any global market power for Texas oil producers.
+- The results for this test were affected by the small sample size that we used due to using annual data. 
 
 ## Discussion
 ### Limitations 
