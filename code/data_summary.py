@@ -29,7 +29,7 @@ plt.ylabel("Values")
 plt.legend()
 plt.tight_layout()
 plt.savefig("artifacts/line_graph_oil_trends.png", dpi=300)
-# plt.show()
+
 
 """Dual-axis Price vs Production"""
 fig, ax1 = plt.subplots(figsize=(10, 6))
@@ -49,4 +49,4 @@ ax2.tick_params(axis='y', labelcolor=color)
 plt.title("Oil Price vs Oil Production Over Time")
 fig.tight_layout()
 plt.savefig("artifacts/dual_axis_price_vs_production.png", dpi=300)
-# plt.show()
+
