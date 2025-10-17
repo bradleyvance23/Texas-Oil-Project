@@ -86,3 +86,6 @@ Oil activity varies widely across Texas. Using only state-level averages can pot
 4. View the outputs in the `artifacts` folder
 5. Supplementary Data: Run additional data analysis file `python code/test_for_production_alone.py` 
     - This file will generate regression results with price per barrel as the explanatory variable for production.
+6. Data Summary/ Visualization: Run additional visualization file `visualize_data.py`
+   - This file will create 2 graphs that show the trends in the variables and the price vs production that can be found in the `artifacts` folder 
+   - It will also create a summary statistics table that can be found in the `artifacts` folder
